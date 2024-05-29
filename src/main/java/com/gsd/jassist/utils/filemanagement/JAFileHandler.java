@@ -13,11 +13,13 @@ public class JAFileHandler {
 
     public JAFileHandler(Map<String, File> files, String projectPath) {
         this.files = files;
+        System.out.println(projectPath + "has been stored for use in entire program!");
         this.projectPath = projectPath;
         this.logPath = this.projectPath + "Logs\\";
     }
 
     public String getProjectPath() {
+        System.out.println("Grabbing the saved project path " + this.projectPath);
         return this.projectPath;
     }
 

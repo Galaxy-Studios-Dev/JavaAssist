@@ -7,9 +7,9 @@ public class JAFile extends File{
     private File self;
 
     public JAFile(JAFileHandler fileHandler, String fileKey, String fileName) throws IOException {
-        super(fileHandler.getProjectPath() + fileName);
-
+        super(fileName);
         this.self = this;
+        System.out.println(fileName);
         this.self.createNewFile();
 
         fileHandler.addFile(fileKey, this.self);

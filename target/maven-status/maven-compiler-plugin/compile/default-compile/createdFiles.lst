@@ -1,4 +1,4 @@
-com\gsd\jassist\utils\logger\JALogger$1.class
+com\gsd\jassist\utils\filemanagement\JALogFile.class
 com\gsd\jassist\utils\filemanagement\JAZipHandler.class
 com\gsd\jassist\utils\filemanagement\JAFile.class
 com\gsd\jassist\utils\filemanagement\JAFileHandler.class

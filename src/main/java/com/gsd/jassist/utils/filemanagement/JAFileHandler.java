@@ -9,13 +9,20 @@ public class JAFileHandler {
     private Map<String, File> files;
     private String projectPath;
 
+    private String logPath;
+
     public JAFileHandler(Map<String, File> files, String projectPath) {
         this.files = files;
         this.projectPath = projectPath;
+        this.logPath = this.projectPath + "\\Logs\\";
     }
 
     public String getProjectPath() {
         return this.projectPath;
+    }
+
+    public String getLogPath() {
+        return this.logPath;
     }
 
     public void addFile(String fileKey, File file) {

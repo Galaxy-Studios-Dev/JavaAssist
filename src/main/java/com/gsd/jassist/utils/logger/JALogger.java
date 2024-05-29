@@ -16,7 +16,7 @@ public class JALogger {
         this.fileHandler = fileHandler;
         dateFormatter = new JADateFormatter();
 
-        logFile = new JAFile(this.fileHandler, "LOGGER", dateFormatter.getDate() + ".log");
+        logFile = new JAFile(this.fileHandler, "LOGGER", fileHandler.getLogPath() + dateFormatter.getDate() + ".log");
     }
 
     public void log(JALevel priority, String text) throws IOException {

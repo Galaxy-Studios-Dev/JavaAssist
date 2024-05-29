@@ -14,7 +14,7 @@ public class JAFileHandler {
     public JAFileHandler(Map<String, File> files, String projectPath) {
         this.files = files;
         this.projectPath = projectPath;
-        this.logPath = this.projectPath + "\\Logs\\";
+        this.logPath = this.projectPath + "Logs\\";
     }
 
     public String getProjectPath() {

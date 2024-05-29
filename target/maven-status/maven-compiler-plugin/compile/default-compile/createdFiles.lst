@@ -1,5 +1,9 @@
-com\gsd\jassist\utils\filemanagement\JAFileHandler.class
-com\gsd\jassist\display\JAPanel.class
+com\gsd\jassist\utils\logger\JALogger$1.class
 com\gsd\jassist\utils\filemanagement\JAZipHandler.class
-com\gsd\jassist\display\JAWindow.class
 com\gsd\jassist\utils\filemanagement\JAFile.class
+com\gsd\jassist\utils\filemanagement\JAFileHandler.class
+com\gsd\jassist\utils\logger\JALogger.class
+com\gsd\jassist\display\JAPanel.class
+com\gsd\jassist\utils\JADateFormatter.class
+com\gsd\jassist\utils\logger\JALevel.class
+com\gsd\jassist\display\JAWindow.class

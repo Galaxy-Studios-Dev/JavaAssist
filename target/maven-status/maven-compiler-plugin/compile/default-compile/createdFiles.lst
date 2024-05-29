@@ -1,0 +1,5 @@
+com\gsd\jassist\utils\filemanagement\JAFileHandler.class
+com\gsd\jassist\display\JAPanel.class
+com\gsd\jassist\utils\filemanagement\JAZipHandler.class
+com\gsd\jassist\display\JAWindow.class
+com\gsd\jassist\utils\filemanagement\JAFile.class

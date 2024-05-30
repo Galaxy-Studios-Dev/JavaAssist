@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.gsd.jassist.display"},{"l":"com.gsd.jassist.utils"},{"l":"com.gsd.jassist.utils.exceptions"},{"l":"com.gsd.jassist.utils.filemanagement"},{"l":"com.gsd.jassist.utils.logger"}];updateSearchResults();

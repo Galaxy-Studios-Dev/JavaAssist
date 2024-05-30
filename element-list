@@ -1,0 +1,5 @@
+com.gsd.jassist.display
+com.gsd.jassist.utils
+com.gsd.jassist.utils.exceptions
+com.gsd.jassist.utils.filemanagement
+com.gsd.jassist.utils.logger

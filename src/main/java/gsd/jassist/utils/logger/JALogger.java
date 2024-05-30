@@ -4,6 +4,7 @@ import gsd.jassist.utils.JADateFormatter;
 import gsd.jassist.utils.filemanagement.JAFile;
 import gsd.jassist.utils.filemanagement.JAFileHandler;
 import gsd.jassist.utils.filemanagement.JALogFile;
+import gsd.jassist.utils.filemanagement.JAPathHandler;
 
 import java.io.IOException;
 
@@ -23,13 +24,13 @@ public class JALogger {
      * @param fileHandler JAFileHandler of the project
      * @throws IOException Can throw a IOException creating a JALogFile
      */
-    public JALogger(JAFileHandler fileHandler) throws IOException {
+    public JALogger(JAFileHandler fileHandler, JAPathHandler pathHandler) throws IOException {
         this.fileHandler = fileHandler;
         dateFormatter = new JADateFormatter();
 
         this.logPath = fileHandler.getLogPath() + dateFormatter.fileFormatDate() + ".log";
 
-        this.logFile = new JALogFile(this.fileHandler, dateFormatter.fileFormatDate());
+        this.logFile = new JALogFile(this.fileHandler, pathHandler, dateFormatter.fileFormatDate());
     }
 
     /**

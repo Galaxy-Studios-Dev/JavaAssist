@@ -1,6 +1,7 @@
 gsd\jassist\display\JABackground.class
 gsd\jassist\display\JAPanel.class
 gsd\jassist\display\JAImage.class
+gsd\jassist\utils\filemanagement\JAPathHandler.class
 gsd\jassist\utils\logger\JALevel.class
 gsd\jassist\utils\exceptions\FileNotDirectoryException.class
 gsd\jassist\utils\filemanagement\JAZipHandler.class

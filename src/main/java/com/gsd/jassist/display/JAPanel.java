@@ -2,6 +2,10 @@ package com.gsd.jassist.display;
 
 import javax.swing.*;
 
+/**
+ * @author BigTallahasee
+ * **Note** Work in Progress, Don't Use
+ */
 public class JAPanel extends JPanel {
     JPanel self;
 

@@ -2,6 +2,9 @@ package com.gsd.jassist.utils;
 
 import java.util.Date;
 
+/**
+ * @author BigTallahasee
+ */
 public class JADateFormatter {
     private String date;
     private String time;
@@ -9,14 +12,25 @@ public class JADateFormatter {
 
     private Date dateObject = new Date();
 
+    /**
+     *
+     */
     public JADateFormatter() {
         this.splitDate();
     }
 
+    /**
+     *
+     * @return returns the Date from the Date Class (Ex. May 29, 2024) **without the comma
+     */
     public String getDate() {
         return this.date;
     }
 
+    /**
+     *
+     * @return returns the hours minutes and seconds (Ex. 12:00:00)
+     */
     public String getTime() {
         return this.time;
     }
@@ -28,6 +42,10 @@ public class JADateFormatter {
         this.time = splitDate[3];
     }
 
+    /**
+     *
+     * @return Returns a formatted date for the JALogger (Ex. 5-29-2024)
+     */
     public String fileFormatDate() {
         String[] fileFormatDate = this.date.split(" ");
 

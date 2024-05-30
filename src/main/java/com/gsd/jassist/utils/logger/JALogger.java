@@ -7,6 +7,9 @@ import com.gsd.jassist.utils.filemanagement.JALogFile;
 
 import java.io.IOException;
 
+/**
+ * @author BigTallahasee
+ */
 public class JALogger {
     private JAFileHandler fileHandler;
     private JAFile logFile;
@@ -15,6 +18,11 @@ public class JALogger {
 
     private JADateFormatter dateFormatter;
 
+    /**
+     *
+     * @param fileHandler JAFileHandler of the project
+     * @throws IOException Can throw a IOException creating a JALogFile
+     */
     public JALogger(JAFileHandler fileHandler) throws IOException {
         this.fileHandler = fileHandler;
         dateFormatter = new JADateFormatter();
@@ -24,10 +32,20 @@ public class JALogger {
         this.logFile = new JALogFile(this.fileHandler, dateFormatter.fileFormatDate());
     }
 
+    /**
+     *
+     * @return returns a JAFile that is pre-made by the logger
+     */
     public JAFile getLogFile() {
         return this.logFile;
     }
 
+    /**
+     *
+     * @param priority What is the seriousness of the log
+     * @param text What will be written into the log
+     * @throws IOException Can throw IOException writing to JALogFile
+     */
     public void log(JALevel priority, String text) throws IOException {
         String logLevel = priority.toString();
         String logHeader = dateFormatter.getTime() + " | Priority : " + logLevel + " | ";

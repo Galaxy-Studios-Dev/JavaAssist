@@ -5,6 +5,10 @@ import java.awt.*;
 import java.awt.image.ImageObserver;
 import java.text.AttributedCharacterIterator;
 
+/**
+ * @author BigTallahasee
+ * **Note** Work in Progress, Don't Use
+ */
 public class JAWindow extends JFrame {
     private JFrame self;
     private String title = "JavaAssist";

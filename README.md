@@ -2,3 +2,5 @@
 
 # [Maven/Gradle](https://github.com/Galaxy-Studios-Dev/JavaAssist/wiki)
 
+# [jassist.display (Package)](https://github.com/Galaxy-Studios-Dev/JavaAssist/wiki/Display)
+

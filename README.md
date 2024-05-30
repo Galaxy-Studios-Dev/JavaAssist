@@ -33,3 +33,5 @@ dependencies {
    implementation 'com.github.Galaxy-Studios-Dev:JavaAssist:Tag'
 }
 ```
+
+# [Javadocs](https://galaxy-studios-dev.github.io/JavaAssist/)

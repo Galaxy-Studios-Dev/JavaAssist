@@ -20,10 +20,10 @@ public class JALogFile extends JAFile{
      * @throws IOException
      */
     public JALogFile(JAFileHandler fileHandler, JAPathHandler pathHandler, String fileName) throws IOException {
-        super(fileHandler, "LOGGER", pathHandler.getSpecficPath("LOG") + fileName + ".log");
+        super(fileHandler, "LOG", pathHandler.getSpecificPath("LOGDIR") + fileName + ".log");
 
         this.fileHandler = fileHandler;
-        this.fileKey = "LOGGER";
-        this.exactLogPath = fileHandler.getLogPath() + fileName + ".log";
+        this.fileKey = "LOG";
+        this.exactLogPath = pathHandler.getSpecificPath(pathHandler.getLogPathKey()) + fileName + ".log";
     }
 }

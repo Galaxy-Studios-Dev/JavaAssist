@@ -28,7 +28,7 @@ public class JALogger {
         this.fileHandler = fileHandler;
         dateFormatter = new JADateFormatter();
 
-        this.logPath = fileHandler.getLogPath() + dateFormatter.fileFormatDate() + ".log";
+        this.logPath = pathHandler.getSpecificPath(pathHandler.getLogPathKey()) + dateFormatter.fileFormatDate() + ".log";
 
         this.logFile = new JALogFile(this.fileHandler, pathHandler, dateFormatter.fileFormatDate());
     }

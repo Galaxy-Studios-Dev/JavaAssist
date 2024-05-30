@@ -8,41 +8,23 @@ import java.util.Map;
 public class JAFileHandler {
     private Map<String, JADirectory> directories;
     private Map<String, JAFile> files;
-    private String projectPath;
 
     private JALogger logger;
+    private final String logKey = "LOG";
 
-    private String logPath;
 
     /**
      *
-     * @param directories a map of directories, Empty or With items
-     * @param files a Map of jafiles, Empty or with items
-     * @param projectPath the path where you plan to store files for the user
+     * @param directories
+     * @param files
      */
-    public JAFileHandler(Map<String, JADirectory> directories, Map<String, JAFile> files, String projectPath) {
+    public JAFileHandler(Map<String, JADirectory> directories, Map<String, JAFile> files) {
         this.directories = directories;
         this.files = files;
-
-        this.projectPath = projectPath;
-        this.logPath = this.projectPath + "Logs\\";
     }
 
-    /**
-     *
-     * @return returns the provided project path
-     */
-    public String getProjectPath() {
-        System.out.println("Grabbing the saved project path " + this.projectPath);
-        return this.projectPath;
-    }
-
-    /**
-     *
-     * @return returns the logs path
-     */
-    public String getLogPath() {
-        return this.logPath;
+    public String getLogKey() {
+        return this.logKey;
     }
 
     /**
@@ -59,6 +41,18 @@ public class JAFileHandler {
      */
     public void setLogger(JALogger logger) {
         this.logger = logger;
+    }
+
+    public Map<String, JADirectory> getDirectories() {
+        return this.directories;
+    }
+
+    public void addDirectory(String key, JADirectory directory) {
+        this.directories.put(key, directory);
+    }
+
+    public Map<String, JAFile> getFiles() {
+        return this.files;
     }
 
     /**

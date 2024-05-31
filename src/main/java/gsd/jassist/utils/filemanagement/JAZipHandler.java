@@ -63,7 +63,6 @@ public class JAZipHandler {
     public void unzipNested(File tempDir, String destination) throws IOException {
         for (int i = 0; i < tempDir.list().length; i++) {
             this.containedDirectories.put("Directory" + i, tempDir);
-            //System.out.println(tempDir.getName() + " : " + this.containedDirectories.get("Directory" + i).list()[i]);
             for (int j = 0; j < this.containedDirectories.get("Directory" + i).list().length; j++) {
                 tempDir = new File(destination + tempDir.getName() + "\\" + this.containedDirectories.get("Directory" + i).list()[j]);
                 tempDir.getParentFile().mkdirs();

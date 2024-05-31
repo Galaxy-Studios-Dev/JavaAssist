@@ -19,7 +19,6 @@ public class JAFile extends File{
     public JAFile(JAFileHandler fileHandler, String fileKey, String fileName) throws IOException {
         super(fileName);
         this.self = this;
-        System.out.println(fileName);
         this.self.createNewFile();
 
         fileHandler.addFile(fileKey, this);

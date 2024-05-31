@@ -24,13 +24,10 @@ public class JADirectory extends File {
 
         if (this.isDirectory()) {
             this.self = new File(pathname);
-            System.out.println("Path given is a directory that already exists...");
         }
         else if (!this.isDirectory() && pathname.endsWith("/") || !this.isDirectory() && pathname.endsWith("\\")) {
             this.self = new File(pathname);
             this.self.mkdirs();
-            System.out.println("Path is not a directory that exists but ends with / or \\ and should be a directory!");
-            System.out.println("Turning path into a directory...");
         }else {
             throw new FileNotDirectoryException("File is not a directory...");
         }
